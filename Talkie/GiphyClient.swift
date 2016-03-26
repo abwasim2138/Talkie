@@ -8,19 +8,19 @@
 
 import Foundation
 
-
+//CITE: VIRTUAL TOURIST
 class GiphyClient {
     
     private static let session = NSURLSession.sharedSession()
     
-    class func getGifs(completionHandler: (images:[String], error: NSError?)->Void)->NSURLSessionTask {
-        
-        let url = NSURL(string: "https://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC")
+    class func getGifs(searchWord: String, completionHandler: (images:[String], error: NSError?)->Void)->NSURLSessionTask {
+
+        let url = NSURL(string: "https://api.giphy.com/v1/gifs/search?q=\(searchWord)&api_key=dc6zaTOxFJmzC")
         let request = NSURLRequest(URL: url!)
         
         let task = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
             guard error == nil else {
-                return print(error?.localizedFailureReason)
+                return completionHandler(images: [], error: error)
             }
             
             parseJSONData(data!, completionHandler: { (result, error) -> Void in
@@ -28,13 +28,14 @@ class GiphyClient {
                 guard let dictionary = result as? NSDictionary else {
                     return
                 }
-                
+                guard let imageDictionary = dictionary["data"] else {
+                    return
+                }
                 var images = [String]()
-                for i in 0...10 {
-                    let string = dictionary["data"]![i]!["images"]!!["original"]!!["url"] as! String
+                for i in 0..<imageDictionary.count {
+                    let string = imageDictionary[i]!["images"]!!["original"]!!["url"] as! String
                     images.append(string)
                 }
-                
                 completionHandler(images: images, error: error)
 
             })

@@ -8,34 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		67D69C933F3647680C1D7406 /* Pods_Talkie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025D71EC6EFBB96143F0F0AA /* Pods_Talkie.framework */; };
+		9D2240561C93D3CD0078F8B7 /* TalkiePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2240551C93D3CD0078F8B7 /* TalkiePlayerViewController.swift */; };
+		9D22405B1C94EF810078F8B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2240591C94EF810078F8B7 /* Main.storyboard */; };
 		9D4C198F1C8E610A000C32AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C198E1C8E610A000C32AA /* AppDelegate.swift */; };
 		9D4C19921C8E610A000C32AA /* Talkie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C19901C8E610A000C32AA /* Talkie.xcdatamodeld */; };
-		9D4C19941C8E610A000C32AA /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C19931C8E610A000C32AA /* MasterViewController.swift */; };
-		9D4C19961C8E610A000C32AA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C19951C8E610A000C32AA /* DetailViewController.swift */; };
-		9D4C19991C8E610A000C32AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4C19971C8E610A000C32AA /* Main.storyboard */; };
 		9D4C199B1C8E610A000C32AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D4C199A1C8E610A000C32AA /* Assets.xcassets */; };
 		9D4C199E1C8E610A000C32AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4C199C1C8E610A000C32AA /* LaunchScreen.storyboard */; };
 		9D4C19A61C8E6147000C32AA /* CoreDataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C19A51C8E6147000C32AA /* CoreDataStackManager.swift */; };
 		9D4C19A81C8E61AA000C32AA /* GiphyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C19A71C8E61AA000C32AA /* GiphyClient.swift */; };
-		9DBBA8F71C900C6E001F593F /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBBA8F61C900C6D001F593F /* Cell.swift */; };
+		9D6AEC631C97EC760054632F /* Talkie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6AEC5F1C97EC760054632F /* Talkie+CoreDataProperties.swift */; };
+		9D6AEC641C97EC760054632F /* Talkie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6AEC601C97EC760054632F /* Talkie.swift */; };
+		9D6AEC651C97EC760054632F /* Gif+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6AEC611C97EC760054632F /* Gif+CoreDataProperties.swift */; };
+		9D6AEC661C97EC760054632F /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6AEC621C97EC760054632F /* Gif.swift */; };
+		9DCF434D1C990A8B003C816E /* ImageMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF434C1C990A8B003C816E /* ImageMemory.swift */; };
+		9DCF43511C991111003C816E /* GifCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF43501C991111003C816E /* GifCollectionViewController.swift */; };
+		9DCF43531C9990E4003C816E /* TalkieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF43521C9990E4003C816E /* TalkieCell.swift */; };
+		9DD8450D1CA59694006F42F1 /* TalkieTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD8450C1CA59694006F42F1 /* TalkieTableVC.swift */; };
+		9DD8450F1CA6C5EF006F42F1 /* SettingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD8450E1CA6C5EF006F42F1 /* SettingsTableVC.swift */; };
+		9DD845111CA6C9D5006F42F1 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD845101CA6C9D5006F42F1 /* UserSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		025D71EC6EFBB96143F0F0AA /* Pods_Talkie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Talkie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D53DA333268719BE423FEE1 /* Pods-Talkie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talkie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Talkie/Pods-Talkie.release.xcconfig"; sourceTree = "<group>"; };
 		7281AD5FE67824F9C8AFF0B2 /* Pods-Talkie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talkie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Talkie/Pods-Talkie.debug.xcconfig"; sourceTree = "<group>"; };
+		9D2240551C93D3CD0078F8B7 /* TalkiePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkiePlayerViewController.swift; sourceTree = "<group>"; };
+		9D22405A1C94EF810078F8B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D4C198B1C8E610A000C32AA /* Talkie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talkie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4C198E1C8E610A000C32AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D4C19911C8E610A000C32AA /* Talkie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Talkie.xcdatamodel; sourceTree = "<group>"; };
-		9D4C19931C8E610A000C32AA /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		9D4C19951C8E610A000C32AA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		9D4C19981C8E610A000C32AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D4C199A1C8E610A000C32AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D4C199D1C8E610A000C32AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D4C199F1C8E610A000C32AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D4C19A51C8E6147000C32AA /* CoreDataStackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStackManager.swift; sourceTree = "<group>"; };
 		9D4C19A71C8E61AA000C32AA /* GiphyClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiphyClient.swift; sourceTree = "<group>"; };
-		9DBBA8F61C900C6D001F593F /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		9D6AEC5F1C97EC760054632F /* Talkie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Talkie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9D6AEC601C97EC760054632F /* Talkie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Talkie.swift; sourceTree = "<group>"; };
+		9D6AEC611C97EC760054632F /* Gif+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gif+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9D6AEC621C97EC760054632F /* Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		9DCF434C1C990A8B003C816E /* ImageMemory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageMemory.swift; sourceTree = "<group>"; };
+		9DCF43501C991111003C816E /* GifCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifCollectionViewController.swift; sourceTree = "<group>"; };
+		9DCF43521C9990E4003C816E /* TalkieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkieCell.swift; sourceTree = "<group>"; };
+		9DD8450C1CA59694006F42F1 /* TalkieTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkieTableVC.swift; sourceTree = SOURCE_ROOT; };
+		9DD8450E1CA6C5EF006F42F1 /* SettingsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableVC.swift; sourceTree = "<group>"; };
+		9DD845101CA6C9D5006F42F1 /* UserSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,19 +95,51 @@
 		9D4C198D1C8E610A000C32AA /* Talkie */ = {
 			isa = PBXGroup;
 			children = (
+				9D4C199F1C8E610A000C32AA /* Info.plist */,
 				9D4C198E1C8E610A000C32AA /* AppDelegate.swift */,
 				9D4C19A51C8E6147000C32AA /* CoreDataStackManager.swift */,
-				9D4C19931C8E610A000C32AA /* MasterViewController.swift */,
-				9D4C19A71C8E61AA000C32AA /* GiphyClient.swift */,
-				9D4C19951C8E610A000C32AA /* DetailViewController.swift */,
-				9D4C19971C8E610A000C32AA /* Main.storyboard */,
-				9DBBA8F61C900C6D001F593F /* Cell.swift */,
-				9D4C199A1C8E610A000C32AA /* Assets.xcassets */,
-				9D4C199C1C8E610A000C32AA /* LaunchScreen.storyboard */,
-				9D4C199F1C8E610A000C32AA /* Info.plist */,
-				9D4C19901C8E610A000C32AA /* Talkie.xcdatamodeld */,
+				9D6AEC5E1C97EC640054632F /* Model */,
+				9DCF434F1C990AD1003C816E /* Views */,
+				9DCF434E1C990A95003C816E /* Controllers */,
 			);
 			path = Talkie;
+			sourceTree = "<group>";
+		};
+		9D6AEC5E1C97EC640054632F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D4C19901C8E610A000C32AA /* Talkie.xcdatamodeld */,
+				9D6AEC5F1C97EC760054632F /* Talkie+CoreDataProperties.swift */,
+				9D6AEC601C97EC760054632F /* Talkie.swift */,
+				9DD845101CA6C9D5006F42F1 /* UserSettings.swift */,
+				9D6AEC611C97EC760054632F /* Gif+CoreDataProperties.swift */,
+				9D6AEC621C97EC760054632F /* Gif.swift */,
+				9D4C19A71C8E61AA000C32AA /* GiphyClient.swift */,
+				9DCF434C1C990A8B003C816E /* ImageMemory.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9DCF434E1C990A95003C816E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9DCF43501C991111003C816E /* GifCollectionViewController.swift */,
+				9D2240551C93D3CD0078F8B7 /* TalkiePlayerViewController.swift */,
+				9DD8450C1CA59694006F42F1 /* TalkieTableVC.swift */,
+				9DD8450E1CA6C5EF006F42F1 /* SettingsTableVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9DCF434F1C990AD1003C816E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D2240591C94EF810078F8B7 /* Main.storyboard */,
+				9D4C199C1C8E610A000C32AA /* LaunchScreen.storyboard */,
+				9DCF43521C9990E4003C816E /* TalkieCell.swift */,
+				9D4C199A1C8E610A000C32AA /* Assets.xcassets */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		E7ABBFC63D9A7B2BA80470AF /* Pods */ = {
@@ -166,7 +214,7 @@
 			files = (
 				9D4C199E1C8E610A000C32AA /* LaunchScreen.storyboard in Resources */,
 				9D4C199B1C8E610A000C32AA /* Assets.xcassets in Resources */,
-				9D4C19991C8E610A000C32AA /* Main.storyboard in Resources */,
+				9D22405B1C94EF810078F8B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,23 +273,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DCF434D1C990A8B003C816E /* ImageMemory.swift in Sources */,
 				9D4C198F1C8E610A000C32AA /* AppDelegate.swift in Sources */,
 				9D4C19921C8E610A000C32AA /* Talkie.xcdatamodeld in Sources */,
-				9DBBA8F71C900C6E001F593F /* Cell.swift in Sources */,
-				9D4C19941C8E610A000C32AA /* MasterViewController.swift in Sources */,
+				9D6AEC661C97EC760054632F /* Gif.swift in Sources */,
+				9DD8450F1CA6C5EF006F42F1 /* SettingsTableVC.swift in Sources */,
+				9DCF43531C9990E4003C816E /* TalkieCell.swift in Sources */,
+				9D2240561C93D3CD0078F8B7 /* TalkiePlayerViewController.swift in Sources */,
+				9D6AEC631C97EC760054632F /* Talkie+CoreDataProperties.swift in Sources */,
+				9DD8450D1CA59694006F42F1 /* TalkieTableVC.swift in Sources */,
 				9D4C19A61C8E6147000C32AA /* CoreDataStackManager.swift in Sources */,
+				9D6AEC651C97EC760054632F /* Gif+CoreDataProperties.swift in Sources */,
 				9D4C19A81C8E61AA000C32AA /* GiphyClient.swift in Sources */,
-				9D4C19961C8E610A000C32AA /* DetailViewController.swift in Sources */,
+				9DCF43511C991111003C816E /* GifCollectionViewController.swift in Sources */,
+				9DD845111CA6C9D5006F42F1 /* UserSettings.swift in Sources */,
+				9D6AEC641C97EC760054632F /* Talkie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9D4C19971C8E610A000C32AA /* Main.storyboard */ = {
+		9D2240591C94EF810078F8B7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9D4C19981C8E610A000C32AA /* Base */,
+				9D22405A1C94EF810078F8B7 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
