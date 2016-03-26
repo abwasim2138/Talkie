@@ -24,10 +24,10 @@ Gif related project
  To delete a Talkie just swipe left on it and press delete. 
  
  
- •The last search is saved \n
+ •The last search is saved                                           
  •Additional Auto-Save to photos library can be toggled in the settings tab. 
  
  
- Built: \n
+ Built:                            
 •GiphyAPI(https://github.com/Giphy/GiphyAPI) used for GIF database.
 •FLAnimatedImage(https://github.com/Flipboard/FLAnimatedImage) GIF engine used.
