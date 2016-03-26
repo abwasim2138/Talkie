@@ -1,8 +1,8 @@
 # Talkie
-Gif related project 
 
 
- About: 
+
+#About: 
  
  Talkie allows users to search for their favorite gifs and add their own voices to them! 
  
@@ -28,6 +28,6 @@ Gif related project
  •Additional Auto-Save to photos library can be toggled in the settings tab. 
  
  
- Built:                            
+#Built:                            
 •GiphyAPI(https://github.com/Giphy/GiphyAPI) used for GIF database.
 •FLAnimatedImage(https://github.com/Flipboard/FLAnimatedImage) GIF engine used.
