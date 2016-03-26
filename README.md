@@ -7,7 +7,7 @@
  Talkie allows users to search for their favorite gifs and add their own voices to them! 
  
  
- How to use: 
+#USE: 
  
   After launching the app search for a gif (ex: minions) in the search bar provided via the first tab. 
  Given there are no network related issues, gifs should fill up the collection view. 
