@@ -23,10 +23,10 @@
  
  Talkie/2nd Tab
   The second tab will take you to your own collection of Talkies that you made. In order to play a Talkie just 
- tap on a cell in the table.
-      •Talkies will only show if you recorded a Gif in the TalkiePlayerVC and hit Done to save it. 
+ tap on a cell in the table (the talkie is at a 0.7 alpha level if not tapped and 1.0 when it is).
  If you want to share a Talkie first tap on it and then hit the action button in the top right corner. 
  To delete a Talkie just swipe left on it and press delete. 
+ •Talkies will only show if you recorded a Gif in the TalkiePlayerVC and hit Done to save it. 
  
  
  
