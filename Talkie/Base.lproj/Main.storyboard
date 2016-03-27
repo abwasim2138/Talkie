@@ -36,7 +36,7 @@
                 <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="Oy9-Jj-yBF" customClass="TalkiePlayerViewController" customModule="Talkie" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Wm-98-Ke6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="599" y="614"/>
+            <point key="canvasLocation" x="583" y="662"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Oga-97-bnm">
@@ -53,25 +53,17 @@
                                         <rect key="frame" x="0.0" y="99" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fza-PI-bUo" id="Vsg-Wu-k0O">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3jS-Nz-U7e">
-                                        <rect key="frame" x="0.0" y="143" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3jS-Nz-U7e" id="SMQ-Sz-jsF">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto Save To Photos Library" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6c3-HA-4Ea">
-                                                    <rect key="frame" x="16" y="14" width="216" height="21"/>
+                                                    <rect key="frame" x="8" y="12" width="216" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bLU-SI-Oe2">
-                                                    <rect key="frame" x="240" y="8" width="51" height="31"/>
+                                                    <rect key="frame" x="232" y="6" width="51" height="31"/>
                                                     <color key="onTintColor" red="0.0039215686269999999" green="0.99607843139999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <connections>
                                                         <action selector="autoSaveOn:" destination="8dS-4E-Ehe" eventType="valueChanged" id="t1Q-cf-EwK"/>
@@ -79,19 +71,11 @@
                                                 </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="6c3-HA-4Ea" firstAttribute="top" secondItem="SMQ-Sz-jsF" secondAttribute="topMargin" constant="6" id="PPD-9u-HeO"/>
-                                                <constraint firstItem="bLU-SI-Oe2" firstAttribute="leading" secondItem="6c3-HA-4Ea" secondAttribute="trailing" constant="8" symbolic="YES" id="bpW-kh-3R4"/>
-                                                <constraint firstItem="6c3-HA-4Ea" firstAttribute="leading" secondItem="SMQ-Sz-jsF" secondAttribute="leadingMargin" constant="8" id="bvc-Ty-wFH"/>
-                                                <constraint firstItem="bLU-SI-Oe2" firstAttribute="top" secondItem="SMQ-Sz-jsF" secondAttribute="topMargin" id="nRW-Is-rVd"/>
+                                                <constraint firstItem="6c3-HA-4Ea" firstAttribute="leading" secondItem="Vsg-Wu-k0O" secondAttribute="leadingMargin" id="YL3-cM-2TP"/>
+                                                <constraint firstItem="6c3-HA-4Ea" firstAttribute="centerY" secondItem="Vsg-Wu-k0O" secondAttribute="centerY" id="cAK-VO-uKg"/>
+                                                <constraint firstItem="bLU-SI-Oe2" firstAttribute="leading" secondItem="6c3-HA-4Ea" secondAttribute="trailing" constant="8" symbolic="YES" id="mog-i0-BgM"/>
+                                                <constraint firstItem="bLU-SI-Oe2" firstAttribute="centerY" secondItem="Vsg-Wu-k0O" secondAttribute="centerY" id="rdU-dM-kr5"/>
                                             </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CBz-5b-3wW">
-                                        <rect key="frame" x="0.0" y="187" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CBz-5b-3wW" id="lO6-03-bJZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -109,7 +93,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wac-4u-gs9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1314" y="-143"/>
+            <point key="canvasLocation" x="1306" y="-155"/>
         </scene>
         <!--Add Sound To A Gif-->
         <scene sceneID="mwv-Tz-78l">
@@ -187,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ch5-mO-ogk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-234" y="-224"/>
+            <point key="canvasLocation" x="-240" y="-162"/>
         </scene>
         <!--Master-->
         <scene sceneID="smW-Zh-WAh">
@@ -199,7 +183,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleAspectFit" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="175" id="WCw-Qf-5nD" customClass="TalkieCell" customModule="Talkie" customModuleProvider="target">
+                            <tableViewCell alpha="0.69999999999999996" contentMode="scaleAspectFit" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="175" id="WCw-Qf-5nD" customClass="TalkieCell" customModule="Talkie" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="86" width="600" height="175"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
@@ -242,7 +226,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-212" y="605"/>
+            <point key="canvasLocation" x="-234" y="629"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qyO-yv-Z7a">
@@ -291,6 +275,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="8i1-ne-cev">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -307,6 +292,6 @@
         <image name="sIcon" width="32" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="led-Y1-5WA"/>
+        <segue reference="d2d-72-QhO"/>
     </inferredMetricsTieBreakers>
 </document>

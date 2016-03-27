@@ -30,14 +30,12 @@ class Talkie: NSManagedObject {
     
     var gif: NSURL? {
         get {
-            
             let path = ImageMemory.makePath(self.shareURL!)
             let u = NSURL(fileURLWithPath: path)
             return u
         }
         set {
             CoreDataStackManager.singleton.managedObjectContext.performBlock {
-        
                 let d = NSData(contentsOfURL: newValue!)
                 ImageMemory.saveGif(d, pathComponent: self.shareURL!)
             }

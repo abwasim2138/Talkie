@@ -14,7 +14,7 @@ class ImageMemory {
     class func retrieveGif(pathComponent: String)->NSData? {
      
         let path = makePath(pathComponent)
-       
+        
         if let data = NSData(contentsOfFile: path) {
             return data
            
@@ -39,10 +39,7 @@ class ImageMemory {
     
     class func deleteGif (pathComponent: String) {
         
-        var path = makePath(pathComponent)
-        if pathComponent.containsString(".mov") {
-            path = pathComponent
-        }
+        let path = makePath(pathComponent)
         if NSFileManager.defaultManager().fileExistsAtPath(path) {
             do {
                 try NSFileManager.defaultManager().removeItemAtPath(path)
@@ -55,15 +52,14 @@ class ImageMemory {
     }
     
     class func makePath(pathComponent: String)-> String {
-        var advB = 30
+        var eIndex = pathComponent.startIndex.advancedBy(30)
         if pathComponent.containsString(".mov") {
-            advB = 176
+            eIndex = pathComponent.rangeOfString("//")!.startIndex
         }
-        let range = Range(pathComponent.startIndex..<pathComponent.startIndex.advancedBy(advB))
+        let range = Range(pathComponent.startIndex..<eIndex)
         let ranger = pathComponent.stringByReplacingCharactersInRange(range, withString: "")
         let r = ranger.stringByReplacingOccurrencesOfString("/giphy", withString: "")
         let documentsDirectoryURL: NSURL = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
-        
         let path = documentsDirectoryURL.URLByAppendingPathComponent(r)
         return path.path!
     }

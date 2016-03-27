@@ -36,7 +36,7 @@ class TalkiePlayerViewController: AVPlayerViewController, AVAudioRecorderDelegat
     override func viewWillDisappear(animated: Bool) {
         NSNotificationCenter.defaultCenter().removeObserver(self)
         if self.composition != nil {
-        prepareForSharing()
+         saveTalkie()
         }
     }
     
@@ -47,6 +47,7 @@ class TalkiePlayerViewController: AVPlayerViewController, AVAudioRecorderDelegat
     }
 
     func cancel () {
+        composition = nil
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -54,6 +55,7 @@ class TalkiePlayerViewController: AVPlayerViewController, AVAudioRecorderDelegat
         
         //CITE: PITCH_PERFECT
         view.backgroundColor = UIColor.grayColor()
+        self.showsPlaybackControls = false
         let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
         let recordingName = "recording.wav"
         let pathArray = [dirPath,recordingName]
@@ -129,6 +131,8 @@ class TalkiePlayerViewController: AVPlayerViewController, AVAudioRecorderDelegat
         let item = AVPlayerItem(asset: composition)
         self.player = AVPlayer(playerItem: item)
         self.composition = composition
+        prepareForSharing()
+        self.showsPlaybackControls = true
         
     }
     
@@ -156,11 +160,7 @@ class TalkiePlayerViewController: AVPlayerViewController, AVAudioRecorderDelegat
                 dispatch_async(dispatch_get_main_queue(), {
                     switch exporter.status {
                     case .Completed:
-                        
                         self.newTalkie = exporter.outputURL!
-                    
-                        self.saveTalkie()
-                       
                     case .Failed:
                         print("EXPORT FAILED")
                     default:
@@ -172,7 +172,6 @@ class TalkiePlayerViewController: AVPlayerViewController, AVAudioRecorderDelegat
         }
 
     }
-    
     
     
     func saveTalkie () {

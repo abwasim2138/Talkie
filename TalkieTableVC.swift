@@ -45,11 +45,11 @@ class TalkieTableVC: UITableViewController, NSFetchedResultsControllerDelegate {
         dispatch_async(dispatch_get_main_queue()) {
             cell.activityIndicator.hidden = false
             cell.activityIndicator.startAnimating()
+            cell.alpha = 0.7
         }
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)) { () -> Void in
         
-            cell.alpha = 0.7
             var imageHolder: NSURL?
             self.managedObjectContext.performBlockAndWait({
                 imageHolder = talkie?.gif
