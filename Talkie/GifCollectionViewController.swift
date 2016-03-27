@@ -29,6 +29,7 @@ class GifCollectionViewController: UIViewController,UICollectionViewDataSource, 
     var deletedIndexPaths: [NSIndexPath]!
     var updatedIndexPaths: [NSIndexPath]!
     var indexP: [NSIndexPath]?
+    var gotMessage = false
     
     
     
@@ -152,6 +153,7 @@ class GifCollectionViewController: UIViewController,UICollectionViewDataSource, 
         for view in cell.subviews {
             view.removeFromSuperview()
         }
+
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)) {
             
             var iP: String?
@@ -173,15 +175,29 @@ class GifCollectionViewController: UIViewController,UICollectionViewDataSource, 
             }else {
                 self.managedObjectContext.performBlockAndWait({
                     iP = gif?.imagePath
+                
                 })
             }
             guard let string = iP else {
                 return
             }
             
+            
             guard let data = NSData(contentsOfURL: NSURL(string: string)!) else {
+                //AS REQUIRED IN CODE REVIEW
+                let aVC = UIAlertController(title: "Errrrr", message: "Network Issues", preferredStyle: .Alert)
+                let action = UIAlertAction(title: "GOT IT", style: .Default, handler: nil)
+                aVC.addAction(action)
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    if self.gotMessage == false {
+                    self.gotMessage = true
+                    self.presentViewController(aVC, animated: true, completion: nil)
+                    }
+                    activityIndicator.removeFromSuperview()
+                })
                 return
             }
+     
             let gifImage = FLAnimatedImage(animatedGIFData: data)
             let imageView = FLAnimatedImageView(frame: CGRect(x: 0, y: 0, width: gifImage.size.width, height: gifImage.size.height))
             imageView.animatedImage = gifImage
@@ -258,6 +274,7 @@ class GifCollectionViewController: UIViewController,UICollectionViewDataSource, 
             managedObjectContext.deleteObject(object as! NSManagedObject)
         }
         CoreDataStackManager.singleton.saveContext()
+        gotMessage = false
     }
     
     func getGifs() {
