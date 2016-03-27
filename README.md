@@ -17,7 +17,7 @@
       •The last search is saved 
       
  TalkiePlayerVC/Modal --
- To record, SWIPE UP anywhere on the AVPlayer view (The background should turn gray in order to indicate a recording session).
+ To record, SWIPE UP anywhere on the AVPlayer view (The background should turn gray in order to indicate a recording session). The avplayer playback controls will be disabled during the actual recording and processing session. 
  To cancel a recording just SWIPE DOWN or if you haven't recorded anything yet then Done works to. 
  If satisfied with the recording you can hit Done in the top left corner and the Talkie will be saved. 
  
